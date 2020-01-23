@@ -1,0 +1,23 @@
+{
+  "name": "st-web",
+  "version": "1.0.0",
+  "description": "Company webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vagus-art/st-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vagus-art/st-web/issues"
+  },
+  "homepage": "https://github.com/Vagus-art/st-web#readme",
+  "dependencies": {
+    "serve": "^11.3.0"
+  }
+}
