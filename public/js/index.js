@@ -1,16 +1,13 @@
 const controller = new ScrollMagic.Controller();
 
-const articleShowcase = document.getElementsByClassName("material-showcase");
-const tl = new gsap.timeline()   
-
-
-for(let i = 0; i<articleShowcase.length; i++){ 
-    let direction = Math.pow(-1,i)*200;
-    tl.from(articleShowcase[i], 1, {x:direction,opacity:0.5});
+$('.material-showcase').each(function(index){
+    const tl = new gsap.timeline(); 
+    const direction = Math.pow(-1,index)*200;
+    tl.from($(this),{x:direction,opacity:0.5})
     new ScrollMagic.Scene({
-        triggerElement:articleShowcase[i].firstChild
+        triggerElement:this
     })
         .setTween(tl)
         .addTo(controller);
-}
+});
 
