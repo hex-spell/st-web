@@ -126,6 +126,7 @@ main{
 .material-showcase-collage{
     display:flex;
     position:relative;
+    max-width: 650px;
 }
 .material-showcase-gray-rectangle{
     background-color: gray;
