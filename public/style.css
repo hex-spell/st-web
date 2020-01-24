@@ -115,8 +115,7 @@ main{
     align-items: center;
 }
 .material-showcase{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     max-width:90%;
     overflow:hidden;
     height:var(--material-gray-rectangle-height);
@@ -127,6 +126,7 @@ main{
     display:flex;
     position:relative;
     max-width: 650px;
+    flex-grow: 1;
 }
 .material-showcase-gray-rectangle{
     background-color: gray;
