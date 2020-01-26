@@ -164,9 +164,6 @@ main {
   border-left: solid 3px black;
   padding-left: 3px;
 }
-.right-title {
-  text-align: right;
-}
 footer {
   display: flex;
   padding-left: 200px;
