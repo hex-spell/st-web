@@ -161,15 +161,8 @@ main {
 .material-showcase-paragraph {
   margin-top: 10px;
   font-size: medium;
-}
-.left-paragraph {
   border-left: solid 3px black;
   padding-left: 3px;
-}
-.right-paragraph {
-  border-right: solid 3px black;
-  text-align: right;
-  padding-right: 3px;
 }
 .right-title {
   text-align: right;
@@ -189,4 +182,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.shifted {
+  flex-direction: row-reverse;
+}
+.shifted .material-showcase-collage{
+  flex-direction: row-reverse;
+}
+.shifted .material-showcase-text .material-showcase-paragraph{
+  border:none;
+  padding:none;
+  border-right: solid 3px black;
+  text-align: right;
+  padding-right: 3px;
+}
+.shifted .material-showcase-text .material-showcase-title{
+  text-align:right;
 }
