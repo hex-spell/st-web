@@ -63,6 +63,43 @@ body {
   }
 }
 
+@media (min-width: 750px) {
+  .material-showcase-small{
+    display: none !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .material-showcase{
+    display: none !important;
+  }
+  main{
+    width:100vw;
+  }
+  .material-showcase-small{
+    width:inherit;
+    box-shadow: var(--material-box-shadow);
+    padding:15px;
+    margin:5px;
+  }
+  .material-showcase-small img{
+    width:100%;
+    height:auto;
+  }
+  .material-showcase-small h3{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .material-showcase-small p{
+    text-align: center;
+    font-size: 1em;
+  }
+  footer{
+    padding-left: 0 !important;
+    justify-content: center;
+  }
+}
+
 #header {
   display: flex;
   justify-content: space-evenly;
